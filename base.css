@@ -19,7 +19,7 @@
     --background:linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
 }
 
-
+/* general/base styles */
 html {
     scroll-behavior:smooth;
     font-family:'Inter',sans-serif;
@@ -44,14 +44,17 @@ html {
 .inner-flexes{
     display:var( --flex-display);
     flex-direction:var(--direction-row);
-    justify-content:var(--j-content);
+    justify-content:var(--j-contentaround);
     /* flex-wrap:var(--wrap); */
 }
 .gray {
     color:hsl(228, 12%, 44%);
     font-size:14px;
 }
-
+.gray-trans {
+    color:hsl(228, 12%, 44%);
+    font-size:14px;
+}
 .num{
     font-weight:var(--f-weight);
     font-size:xx-large;
@@ -70,6 +73,28 @@ html {
 .first-flex > div {
     border-top: 1px solid hsl(208, 92%, 53%)
 }
+
+.flex3{
+    display:var( --flex-display);
+    flex-direction:var(--direction-row);
+    justify-content:var(--j-contentaround);
+}
+
+.div{
+    text-align: center;
+}
+
+.social {
+    transform:translateY(70%);
+}
+
+.flex3  div:nth-child(2) {
+    transform:translate(-5%,20%);
+
+}
+
+
+
 @media (min-width:375px){
 
     header {
@@ -110,6 +135,8 @@ html {
     }
 
 }
+
+/* media queries */
 
 @media (min-width:768px){
     header {
@@ -164,10 +191,24 @@ html {
 .white-bg{
     background-color: hsl(230, 22%, 74%);
 }
-.black-bg{
-    background: linear-gradient(hsl(232, 19%, 15%),hsl(230, 17%, 14%));
-}
-.color{
 
+.black-bg{
+    background:linear-gradient(hsl(228, 28%, 20%),hsl(232, 19%, 15%));
+}
+
+.black{
+    background:linear-gradient(hsl(229, 84%, 12%),hsl(228, 28%, 20%));
+}
+
+.color{
     color:white;
+}
+
+.white{
+    color:hsl(230, 22%, 74%);
+}
+
+.gray-transform {
+    color:hsl(0, 0%, 100%);
+    font-size:14px;
 }
