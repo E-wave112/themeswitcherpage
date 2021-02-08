@@ -142,11 +142,11 @@ html {
 
 
 
-@media (min-width:375px){
+@media (min-width:300px){
 
     header {
         display:var( --flex-display);
-        flex-direction:var(--direction-column);
+        flex-direction:var(--direction-row);
         justify-content:var(--j-content);
         flex-wrap:var(--wrap);
     }

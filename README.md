@@ -1,1 +1,1 @@
-A social media themeswitcher dashboard UI made with HTML5,CSS and Javascript
+A social media themeswitcher dashboard UI made with HTML5,CSS3 and Javascript

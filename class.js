@@ -11,8 +11,6 @@ const caps = document.querySelectorAll('.cap');
 const togglers = document.querySelectorAll('.toggls');
 const grayText = document.querySelectorAll('.gray');
 const modeName = document.querySelector('.mode-name');
-console.log(innercards);
-console.log(typeof nums2)
 
 btn.addEventListener('click', function() {
 
