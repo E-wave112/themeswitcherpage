@@ -26,6 +26,53 @@ html {
     
 }
 
+/* theme swittcher */
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    transition: 0.5s;
+}
+.theme-switcher .mode-name {
+    transition: 0.5s;
+}
+
+/* btn toggle property */
+.btn-toggle {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    margin-left: 8px;
+    padding: 3px;
+    border-radius: 30px;
+    background-image:  linear-gradient( to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* active togggle changing state */
+.active {
+    transition: 0.5s;
+}
+.active > .circle {
+    margin-left: 30px;
+    transition: 0.5s;
+    background-color: hsl(0, 0%, 100%);
+}
+/* circle property */
+
+.circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: hsl(228, 28%, 20%);
+    transition: 0.5s;
+}
+
+
 
 .grad{
     border-top: 2px solid linear-gradient(hsl(37, 97%, 70%),hsl(329, 70%, 58%));
