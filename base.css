@@ -161,6 +161,10 @@ html {
         grid-gap: 50px;
     }
 
+    .div {
+        padding:25px;
+    }
+
     .second-flex{
 
         display:grid;
