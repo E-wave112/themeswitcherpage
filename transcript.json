@@ -1,0 +1,67 @@
+[
+    {
+        "speaker": 0,
+        " elements": [
+            {
+                "type": "text",
+                "value": "In",
+                "ts": 0.05,
+                "end_ts": 0.4,
+                "confidence": 0.77
+            },
+            {
+                "type": "punct",
+                "value": " "
+            },
+            {
+                "type": "text",
+                "value": "my",
+                "ts": 0.4,
+                "end_ts": 0.56,
+                "confidence": 0.92
+            },
+            {
+                "type": "punct",
+                "value": " "
+            },
+            {
+                "type": "text",
+                "value": "role",
+                "ts": 0.56,
+                "end_ts": 0.8,
+                "confidence": 0.95
+            },
+            {
+                "type": "punct",
+                "value": "?"
+            }
+        ]
+    },
+    {
+        "speaker": 0,
+        "elements": [
+            {
+                "type": "text",
+                "value": "I",
+                "ts": 7.29,
+                "end_ts": 7.58,
+                "confidence": 0.99
+            },
+            {
+                "type": "punct",
+                "value": " "
+            },
+            {
+                "type": "text",
+                "value": "think",
+                "ts": 7.58,
+                "end_ts": 7.82,
+                "confidence": 0.99
+            },
+            {
+                "type": "punct",
+                "value": " "
+            }
+        ]
+    }
+]
