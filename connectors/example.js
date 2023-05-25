@@ -2,7 +2,7 @@ const { retrieveUnconnectedIntegrations } = require("./code");
 
 // Testing the function
 
-// the connectorTypes as fetch from the connector-types api
+// the connectorTypes as fetched from the connector-types api
 const connectorTypes = [
     {
         "id": "gongio",
@@ -77,7 +77,7 @@ const connectorTypes = [
     }
 ]
 
-// the second argument is the user data with the connectors they have connected
+// the second argument is the user data with the integrations they have connected to (as fetched from the currentUser query)
 const user = {
     "company": "62d65007ddd690b890310e7e",
     "id": "6317749eddd690b8908fc4c3",
