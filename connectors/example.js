@@ -106,31 +106,7 @@ const connectorTypes = [
   },
 ];
 
-// the second argument is the user data with the integrations they have connected to (as fetched from the currentUser query)
-const user = {
-  company: "62d65007ddd690b890310e7e",
-  id: "6317749eddd690b8908fc4c3",
-  googleId: "113721733599175691005",
-  email: "osagie.iyayi@insight7.io",
-  firstName: "Osagie",
-  lastName: "Iyayi",
-  connectors: [
-    {
-      id: "646fdd3f15f897effce86f48",
-      createdBy: "6317749eddd690b8908fc4c3",
-      status: "success",
-      syncFrequency: 1440,
-      schema: "insight7_62d65007ddd690b890310e7e_insight7_discord",
-      connectedBy: null,
-      connectorId: "646fdd3f15f897effce86f44",
-      connectorType: "insight7_discord",
-      groupId: "fascinating_boiler",
-      createdAt: "1685052735191",
-      updatedAt: "1685052735191",
-    },
-  ],
-};
-
+// the second argument is the integrations the user have connected to (as fetched from a separate endpoint)
 const userConnectors = [
   {
     _id: "64a4818c1e8db2a205b28c32",
