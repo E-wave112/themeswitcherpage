@@ -7,19 +7,26 @@
  * type.
  * @returns an array of connector types that the user is not currently connected to.
  */
-function retrieveUnconnectedIntegrations(user, connectorTypes){
-    const unconnectedConnectors = [];
-    const userConnectors = user.connectors
-    for (const connectorType of connectorTypes) {
-        const connector = userConnectors.find(c => c.connectorType === connectorType.id);
-        if (!connector) {
-            unconnectedConnectors.push(connectorType);
-        }
-    }
-    return unconnectedConnectors;
+function retrieveUnconnectedIntegrations(userConnectors, connectorTypes) {
+  const unconnectedConnectors = [];
+  const updatedConnectorTypes = connectorTypes.map((c) => {
+    c.id.substring(0, 9).toLowerCase() === "insight7_"
+      ? (c.id = c.id.substring(9))
+      : (c.id = c.id);
+    return c;
+  });
 
+  for (const connectorType of updatedConnectorTypes) {
+    const connector = userConnectors.find(
+      (c) => c.connectorType.toLowerCase() === connectorType.id
+    );
+    if (!connector) {
+      unconnectedConnectors.push(connectorType);
+    }
+  }
+  return unconnectedConnectors;
 }
 
 module.exports = {
-    retrieveUnconnectedIntegrations
+  retrieveUnconnectedIntegrations,
 };
